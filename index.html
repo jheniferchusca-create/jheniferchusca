@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mundo de séries</title>
+
+   <style>
+       body{
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+       }
+
+       header{
+           background-color: #002657;
+           color: white;
+           text-align: center;
+           max-width: 800px;
+           margin: 20px auto 0;
+           padding: 16px;
+       }
+
+       main{
+           background-color: #264c9e;
+           color: white;
+           max-width: 800px;
+           margin: 0 auto;
+           padding: 16px;
+           display: flex;
+           gap: 20px;
+           align-items: flex-start;
+       }
+
+       img{
+           width: 150px;
+           height: 150px;
+           border-radius: 10px;
+       }
+
+       .botoes{
+           max-width: 800px;
+           margin: 20px auto;
+           text-align: center;
+       }
+
+       button{
+           padding: 10px 20px;
+           margin: 5px;
+           font-size: 16px;
+           cursor: pointer;
+       }
+   </style>
+</head>
+
+<body>
+
+<header>
+   <h1>tudo sobre séries </h1>
+   <p>Conheça a história de algumas séries.</p>
+</header>
+
+<main>
+
+   <img src="the 100.png" alt="Logo de the 100">
+
+   <div>
+       <h2>A história de The 100</h2>
+
+
+       <p><strong>Por: Jhenifer Chusca</strong></p>
+       <p>
+           The 100 é uma série de ficção científica pós-apocalíptica que se passa quase um século após um devastador conflito nuclear ter destruído a vida na Terra. Os únicos sobreviventes humanos conhecidos viviam em uma estação espacial chamada "A Arca". Quando os sistemas de suporte de vida da estação começam a falhar, os líderes tomam a decisão desesperada de enviar 100 jovens delinquentes juvenis de volta à superfície terrestre para testar se o planeta voltou a ser habitável.
+       </p>
+       <p>
+           Ao chegarem à Terra, os jovens descobrem que não estão sozinhos. O planeta foi repovoado por sobreviventes tribais conhecidos como Grounders (Terraqueos), além de outras facções perigosas e hostis. O grupo, inicialmente liderado por figuras como Clarke Griffin e Bellamy Blake, precisa aprender a colocar suas diferenças de lado, construir uma sociedade do zero e lutar diariamente pela própria sobrevivência contra ameaças ambientais e conflitos sangrentos. 
+       </p>
+       <p>
+           Ao longo de suas sete temporadas, a narrativa se expande para além da simples sobrevivência básica, explorando temas complexos como moralidade, liderança e os limites do que é aceitável fazer para proteger aqueles que amamos. A série evolui de um drama de sobrevivência terrestre para uma jornada de ficção científica épica, envolvendo inteligências artificiais, viagens interplanetárias e a constante busca pela redenção da raça humana.
+       </p>
+   </div>
+ <img src="stranger things.png" alt="Logo de Stranger things">
+
+   <div>
+       <h2>A história de Stranger Things</h2>
+
+
+       <p><strong>Por: Jhenifer Chusca</strong></p>
+       <p>
+           Stranger Things é uma série de ficção científica da Netflix ambientada na década de 1980, na cidade fictícia de Hawkins, Indiana. A história começa quando o jovem Will Byers desaparece misteriosamente, levando seus amigos a iniciarem buscas por conta própria e a encontrarem Eleven, uma garota enigmática com poderes telecinéticos que fugiu de um laboratório governamental.
+       </p>
+       <p>
+           Conforme o grupo investiga o caso, eles descobrem a existência de uma dimensão paralela sombria conhecida como Mundo Invertido, habitada por criaturas perigosas. Ao lado de familiares e aliados mais velhos, os jovens precisam enfrentar ameaças sobrenaturais cada vez maiores, como o Devorador de Mentes e o poderoso Vecna, para proteger sua cidade e salvar o mundo.
+       </p>
+   </div>
+</main>
+
+<div class="botoes">
+
+   <button onclick="curtir()">
+       ❤️ <span id="likes">0</span>
+   </button>
+
+   <button onclick="gostar()">
+       👍 <span id="gostei">0</span>
+   </button>
+
+</div>
+
+<script>
+let likes = 0;
+let gostei = 0;
+
+let curtiu = false;
+let gostou = false;
+
+function curtir() {
+   if (curtiu) {
+       likes--;
+       curtiu = false;
+   } else {
+       likes++;
+       curtiu = true;
+   }
+   document.getElementById("likes").textContent = likes;
+}
+
+function gostar() {
+   if (gostou) {
+       gostei--;
+       gostou = false;
+   } else {
+       gostei++;
+       gostou = true;
+   }
+   document.getElementById("gostei").textContent = gostei;
+}
+</script>
+
+</body>
+</html>
+
